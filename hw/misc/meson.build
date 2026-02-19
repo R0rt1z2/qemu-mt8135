@@ -168,3 +168,5 @@ system_ss.add(when: 'CONFIG_MT6580', if_true: files('mtk_pmic.c', 'mt6350.c'))
 
 # HPPA devices
 system_ss.add(when: 'CONFIG_LASI', if_true: files('lasi.c'))
+
+system_ss.add(when: 'CONFIG_MT8135', if_true: files('mtk_hacc.c'))
